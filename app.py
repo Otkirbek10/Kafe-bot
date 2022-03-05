@@ -10,8 +10,10 @@ async def on_startup(dispatcher):
     # Birlamchi komandalar (/start va /help)
     await set_default_commands(dispatcher)
 
+
     # Ma'lumotlar bazasini yaratamiz:
     try:
+        db.create_cart()
         db.create_table_users()
     except Exception as err:
         print(err)
