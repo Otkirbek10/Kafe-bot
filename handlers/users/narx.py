@@ -10,6 +10,8 @@ price = {
     '2 ichida 1' : 14000,
     'Napoleon' : 17000,
     'Qiymali kabob' : 12500,
+    'Jigar kabob' : 11000,
+    'Tovuq filesi': 10000,
     "Suzma" : 7500,
     "Ruscha Seld balig'i" : 21000,
     "Assorti" : 72000,
@@ -22,6 +24,8 @@ price = {
     "Fransuzcha" : 21000,
     "Mimoza" : 24000,
     "Селёдка под шубой" : 24000,
+    'Vinigret' : 11000,
+    'Grecheskiy' : 24000,
     "Coca-Cola (0,5 L)" : 7000,
     "Coca-Cola (1,0 L)" : 11000,
     "Coca-Cola (1,5 L)" : 13000,
@@ -29,10 +33,29 @@ price = {
     "Fanta (1,0 L)" : 10000,
     "Fanta (1,5 L)" : 13000,
     "Mastava" : 16000,
+    'Moshxurda' : 16000,
     "Borsh" : 16000,
     "Frikadelkali sho'rva" : 15000,
     "Sho'rva(mol go'shti)" : 19000,
-    "Solyanka" : 17000
+    "Solyanka" : 17000,
+    "Balaza": 18000,
+    "Chuchvara" : 15000,
+    "Мясо по-гречески" : 28000,
+    "Мясо по-французски" : 28000,
+    "Мясо по-царски" : 28000,
+    "Мясо по-армянски" : 28000,
+    "Мишель" : 30000,
+    "Bifshteks" : 20000,
+    "Kichkina non (300gr)" : 3500,
+    "Сет Мясо по-китайски" : 37000,
+    "Сет Курица с овощами" : 29000,
+    "Сет Бифштекс" : 28000,
+    "Сет Телятина с грибами" : 38000,
+    "Сет Бефстроганов" : 30000,
+    "Сет Курица с грибами" : 30000,
+    "Shashlikli set (kichik)" : 280000,
+    "Shashlikli set (katta)" : 550000
+
     }
 
 

@@ -11,3 +11,4 @@ from . import shurvalar
 from . import bread
 from . import kombolar
 from . import shash_set
+from . import zakaz

@@ -6,10 +6,10 @@ from handlers.users.narx import get_price
 from aiogram.types import ReplyKeyboardMarkup,KeyboardButton
 
 @dp.message_handler(text='Savatcha')
-async def korzina(message: types.Message):
+async def korzia(message: types.Message):
     try:
         markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add("Buyurtma berish 🚚")
+        markup.row("Buyurtma berish 🚚")
         products = db.get_products(tg_id=message.from_user.id)
         total = 0
         msg = "Sizning buyurtmalaringiz\n\n"
@@ -26,10 +26,10 @@ async def korzina(message: types.Message):
         await message.answer("Savatchangiz bo'sh,keling men sizga uni yig'ishda yordam beraman!")
 
 @dp.message_handler(text='Savatcha 🛒', state=Kafe.categor)
-async def korzina(message: types.Message):
+async def korzin(message: types.Message):
     try:
         markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add("Buyurtma berish 🚚")
+        markup.row("Buyurtma berish 🚚")
         products = db.get_products(tg_id=message.from_user.id)
         total = 0
         msg = "Sizning buyurtmalaringiz\n\n"
@@ -46,10 +46,10 @@ async def korzina(message: types.Message):
         await message.answer("Savatchangiz bo'sh,keling men sizga uni yig'ishda yordam beraman!")
 
 @dp.message_handler(text='Savatcha 🛒', state=Kafe.product)
-async def korzina(message: types.Message):
+async def kozina(message: types.Message):
     try:
         markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        markup.add("Buyurtma berish 🚚")
+        markup.row("Buyurtma berish 🚚")
         products = db.get_products(tg_id=message.from_user.id)
         total = 0
         msg = "Sizning buyurtmalaringiz\n\n"

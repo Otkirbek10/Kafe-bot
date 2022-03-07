@@ -17,3 +17,4 @@ from . import kombo
 from . import sets
 from . import savatcha
 from . import delete
+from . import buyurtma
