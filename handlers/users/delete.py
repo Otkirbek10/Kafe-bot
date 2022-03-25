@@ -10,15 +10,16 @@ async def delete_product(message: types.Message):
     product = message.text
     product = product.replace("❌", "")
     db.delete_product(tg_id=message.from_user.id, Product=product.strip())
-    await message.answer(f"{product.strip()} savatingiz o'chirildi!", reply_markup=ReplyKeyboardRemove())
+    await message.answer(f"{product.strip()} savatingiz o'chirildi!", reply_markup=cats)
+    await Kafe.categor.set()
 
 @dp.message_handler(text_contains="❌",state=Kafe.categor)
 async def delete_product(message: types.Message,state:FSMContext):
     product = message.text
     product = product.replace("❌", "")
     db.delete_product(tg_id=message.from_user.id, Product=product.strip())
-    await message.answer(f"{product.strip()} savatingiz o'chirildi!", reply_markup=ReplyKeyboardRemove())
-    await state.finish()
+    await message.answer(f"{product.strip()} savatingiz o'chirildi!", reply_markup=cats)
+    await Kafe.categor.set()
 
 
 @dp.message_handler(text_contains="❌",state=Kafe.product)
@@ -26,8 +27,8 @@ async def delete_product(message: types.Message,state:FSMContext):
     product = message.text
     product = product.replace("❌", "")
     db.delete_product(tg_id=message.from_user.id, Product=product.strip())
-    await message.answer(f"{product.strip()} savatingiz o'chirildi!", reply_markup=ReplyKeyboardRemove())
-    await state.finish()
+    await message.answer(f"{product.strip()} savatingiz o'chirildi!", reply_markup=cats)
+    await Kafe.categor.set()
     
 
 @dp.message_handler(text="Bo'shatish 🗑")

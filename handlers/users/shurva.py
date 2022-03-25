@@ -33,7 +33,7 @@ async def shur(message: types.Message, state: FSMContext):
     )
     await message.answer_photo("https://ibb.co/m5N1h03", "Moshxurda\n\nNarxi: 16000 so'm")
     await message.answer("Maxsulotni Savatga🛒 qo'shish uchun, sonini kiriting 👇🏼",reply_markup=son)
-    await Kafe.product.set()
+    await Kafe.next()
 
 
 @dp.message_handler(text="Borsh", state=Kafe.product)

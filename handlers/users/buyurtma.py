@@ -31,6 +31,11 @@ async def zakaz(message:types.Message):
     await message.answer("Geolokatsiyangizni jo'nating📍, va men sizga eng yaqin bo'lgan filialni aniqlayman ☕️ ")
     await message.answer("<i>Joingizni jo'nayotganda, geolokatsiyangiz aniqligini tekshiring</i>",parse_mode="html",reply_markup=loc)
 
+@dp.message_handler(text="Yetkazib berish 🚕",state=Kafe.product)
+async def zakaz(message:types.Message):
+    await message.answer("Geolokatsiyangizni jo'nating📍, va men sizga eng yaqin bo'lgan filialni aniqlayman ☕️ ")
+    await message.answer("<i>Joingizni jo'nayotganda, geolokatsiyangiz aniqligini tekshiring</i>",parse_mode="html",reply_markup=loc)
+
 @dp.message_handler(text='ORQAGA🔙')
 async def bak(message:types.Message):
     await message.answer("<i>Buyurtma turini tanlang</i>",reply_markup=zak)
@@ -48,6 +53,19 @@ async def bak(message:types.Message):
 async def ds(message:types.Message):
     await message.answer("Geolokatsiyangizni jo'nating📍, va men sizga eng yaqin bo'lgan filialni aniqlayman ☕️ ")
     await message.answer("<i>Joingizni jo'nayotganda, geolokatsiyangiz aniqligini tekshiring</i>",parse_mode="html",reply_markup=loc)
+
+
+@dp.message_handler(text="O’zim olib ketaman 🚶🏻",state=Kafe.categor)
+async def ds(message:types.Message):
+    await message.answer("Geolokatsiyangizni jo'nating📍, va men sizga eng yaqin bo'lgan filialni aniqlayman ☕️ ")
+    await message.answer("<i>Joingizni jo'nayotganda, geolokatsiyangiz aniqligini tekshiring</i>",parse_mode="html",reply_markup=loc)
+
+@dp.message_handler(text="O’zim olib ketaman 🚶🏻",state=Kafe.product)
+async def ds(message:types.Message):
+    await message.answer("Geolokatsiyangizni jo'nating📍, va men sizga eng yaqin bo'lgan filialni aniqlayman ☕️ ")
+    await message.answer("<i>Joingizni jo'nayotganda, geolokatsiyangiz aniqligini tekshiring</i>",parse_mode="html",reply_markup=loc)
+
+
 
 @dp.message_handler(text="Bekor qilish♨️")
 async def bek(message:types.Message,state:FSMContext):
